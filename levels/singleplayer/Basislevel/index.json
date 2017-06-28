@@ -1,0 +1,11 @@
+{
+"name":"Test Level Pack Boulder Dash, SEP 2016/17",
+"levels":[
+  {"path":"einstieg","design":"images/boazn/","needpoints":0},
+  {"path":"wand","design":"images/konzert/","needpoints":2},
+  {"path":"text","design":"images/festival/","needpoints":4},
+  {"path":"spiegelgeist","design":"images/jamaica/","needpoints":6},
+  {"path":"kreisverkehr","design":"images/p1/","needpoints":8},
+  {"path":"feuerstein","design":"images/metal/","needpoints":10}
+  ]
+}

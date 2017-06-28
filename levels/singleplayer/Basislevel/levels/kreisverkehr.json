@@ -1,0 +1,27 @@
+{
+  "gems" :[5,9,11,13,16],
+  "height":17,
+  "name":"Schicki Micki",
+  "time" : [150,110,80,50,30],
+  "width":17,
+  "ticksPerSecond": 4,
+  "map":[
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "exit", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+    ["wall", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "path", "path", "path", "path", "path", "path", {"token":"xling", "flags":{"left":"true"}}, "path", "path", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "extratime", "mud", "path", "path", "path", "path", {"token":"swapling", "flags":{"right":"true"}}, "path", "path", "path", "path", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "path", "path", {"token":"xling", "flags":{"right":"true"}}, "path", "path", "path", "path", "path", "path", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "me", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "path", {"token":"swapling", "flags":{"right":"true"}}, "path", "path", "path", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "wall"],
+    ["wall", "path", "path", "path", {"token":"blockling", "flags":{"right":"true"}}, "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", {"token":"blockling", "flags":{"left":"true"}}, "path", "path", "path", "path", "wall"],
+    ["wall", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "wall"],
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"]
+    ]
+}

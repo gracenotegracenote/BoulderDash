@@ -1,0 +1,24 @@
+
+TextField, ComboBox, Button {
+-fx-background-color: white;
+-fx-border-color: black;
+-fx-border-width: 1 1 1 1;
+-fx-font-family: "Courier New";
+-fx-font-size: 12px;
+}
+
+HBox {
+-fx-spacing: 10px;
+-fx-padding: 3px;
+}
+
+VBox {
+-fx-spacing: 2px;
+-fx-padding: 5px;
+}
+
+
+
+
+
+

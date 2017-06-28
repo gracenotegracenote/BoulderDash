@@ -1,0 +1,1002 @@
+{
+  "name": "Schieb\u0026Siebspaß",
+  "map": [
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "me"
+      },
+      {
+        "reference": -1,
+        "token": "stone"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "sieve"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "swapling",
+        "flags": {
+          "right": "true"
+        }
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "stone"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "sieve"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "mud"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "swapling",
+        "flags": {
+          "right": "true"
+        }
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "stone"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "sieve"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "extratime"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "swapling",
+        "flags": {
+          "right": "true"
+        }
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "swapling",
+        "flags": {
+          "right": "true"
+        }
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "gem"
+      },
+      {
+        "reference": -1,
+        "token": "gem"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "gem"
+      },
+      {
+        "reference": -1,
+        "token": "gem"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "gem"
+      },
+      {
+        "reference": -1,
+        "token": "gem"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "path"
+      },
+      {
+        "reference": -1,
+        "token": "gem"
+      },
+      {
+        "reference": -1,
+        "token": "gem"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ],
+    [
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "exit"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      },
+      {
+        "reference": -1,
+        "token": "wall"
+      }
+    ]
+  ],
+  "gems": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "time": [
+    150,
+    100,
+    80,
+    70,
+    60
+  ],
+  "width": 15,
+  "height": 15,
+  "ticksPerSecond": 5,
+  "postrules": [
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"swapling"},{"token":"gem"}],
+      "result":[{"token":"path"},{"token":"0", "flags":{"right":"true"}}]
+    }
+  ,
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"swapling"},{"token":"gem"}],
+      "result":[{"token":"path"},{"token":"0", "flags":{"left":"true"}}]
+    }
+  ,
+    {
+      "situation": "any",
+      "direction": "south",
+      "original": [
+        {
+          "token": "stone"
+        },
+        {
+          "token": "sieve"
+        },
+        {
+          "token": "path"
+        }
+      ],
+      "result": [
+        {
+          "token": "path"
+        },
+        {
+          "token": "1"
+        },
+        {
+          "token": "gem"
+        }]}]
+
+    }

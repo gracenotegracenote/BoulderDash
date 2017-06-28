@@ -1,0 +1,27 @@
+{
+  "gems" : [4,7,9,13,16],
+  "height":16,
+  "name":"Ein Text",
+  "time" : [240,165,115,85,45],
+  "width":29,
+  "ticksPerSecond": 8,
+
+  "map":[
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "extratime", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "me", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "gem", "gem", "gem", "gem", "gem", "mud", "stone", "stone", "stone", "stone", "stone", "mud", {"token":"xling", "flags":{"right":"true"}}, "mud", "mud", "mud", {"token":"xling", "flags":{"right":"true"}}, "mud", {"token":"swapling", "flags":{"right":"true"}}, {"token":"swapling", "flags":{"right":"true"}}, {"token":"swapling", "flags":{"right":"true"}}, {"token":"swapling", "flags":{"right":"true"}}, {"token":"swapling", "flags":{"right":"true"}}, "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "gem", "mud", "mud", "mud", "stone", "mud", "mud", "mud", "mud", "mud", "mud", {"token":"xling", "flags":{"right":"true"}}, "mud", {"token":"xling", "flags":{"right":"true"}}, "mud", "mud", "mud", "mud", {"token":"swapling", "flags":{"up":"true"}}, "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "gem", "mud", "mud", "mud", "stone", "stone", "stone", "stone", "mud", "mud", "mud", "mud", {"token":"xling", "flags":{"right":"true"}}, "mud", "mud", "mud", "mud", "mud", {"token":"swapling", "flags":{"up":"true"}}, "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "gem", "mud", "mud", "mud", "stone", "mud", "mud", "mud", "mud", "mud", "mud", {"token":"xling", "flags":{"right":"true"}}, "mud", {"token":"xling", "flags":{"right":"true"}}, "mud", "mud", "mud", "mud", {"token":"swapling", "flags":{"up":"true"}}, "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "gem", "mud", "mud", "mud", "stone", "stone", "stone", "stone", "stone", "mud", {"token":"xling", "flags":{"right":"true"}}, "mud", "mud", "mud", {"token":"xling", "flags":{"right":"true"}}, "mud", "mud", "mud", {"token":"swapling", "flags":{"up":"true"}}, "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "me2", "me3", "me4", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "exit", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"]
+    ]
+}

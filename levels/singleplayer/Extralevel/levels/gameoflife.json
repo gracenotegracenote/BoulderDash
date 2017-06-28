@@ -1,0 +1,330 @@
+{
+  "gems":[6,9,12,15,17],
+  "height":25,
+  "name":"Spiel des Lebens: Game of Life",
+  "time":[12000, 620,230, 45, 18],
+  "width":48,
+  "ticksPerSecond": 4,
+
+  "prerules":[
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*"}],
+      "result":[{"token":"0", "flags":{"loose":"false"}}]
+    }
+    ],
+  "postrules":[
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*"}],
+      "result":[{"token":"0", "flags":{"A":"false", "B":"false", "C":"false", "D":"false", "E":"false", "F":"false", "loose":"false", "pushable":"false", "bam":"false", "bamrich":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*"},{"token":"*"}],
+      "result":[{"token":"0", "flags":{"E":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"*"},{"token":"*"}],
+      "result":[{"token":"0", "flags":{"F":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"E":"true"}},{"token":"gem"}],
+      "result":[{"token":"0", "flags":{"A":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*"},{"token":"gem", "flags":{"E":"true"}}],
+      "result":[{"token":"0", "flags":{"A":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"southeast",
+      "original":[{"token":"*", "flags":{"E":"true"}},{"token":"gem"}],
+      "result":[{"token":"0", "flags":{"B":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"southeast",
+      "original":[{"token":"*"},{"token":"gem", "flags":{"E":"true"}}],
+      "result":[{"token":"0", "flags":{"B":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"southwest",
+      "original":[{"token":"*", "flags":{"E":"true"}},{"token":"gem"}],
+      "result":[{"token":"0", "flags":{"C":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"southwest",
+      "original":[{"token":"*"},{"token":"gem", "flags":{"E":"true"}}],
+      "result":[{"token":"0", "flags":{"C":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"*", "flags":{"E":"true"}},{"token":"gem"}],
+      "result":[{"token":"0", "flags":{"D":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"*"},{"token":"gem", "flags":{"E":"true"}}],
+      "result":[{"token":"0", "flags":{"D":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"northeast",
+      "original":[{"token":"*", "flags":{"E":"true"}},{"token":"gem"}],
+      "result":[{"token":"0", "flags":{"loose":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"northeast",
+      "original":[{"token":"*"},{"token":"gem", "flags":{"E":"true"}}],
+      "result":[{"token":"0", "flags":{"loose":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"northwest",
+      "original":[{"token":"*", "flags":{"E":"true"}},{"token":"gem"}],
+      "result":[{"token":"0", "flags":{"pushable":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"northwest",
+      "original":[{"token":"*"},{"token":"gem", "flags":{"E":"true"}}],
+      "result":[{"token":"0", "flags":{"pushable":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"gem"}],
+      "result":[{"token":"0", "flags":{"bam":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"*"},{"token":"gem", "flags":{"F":"true"}}],
+      "result":[{"token":"0", "flags":{"bam":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"gem"}],
+      "result":[{"token":"0", "flags":{"bamrich":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"*"},{"token":"gem", "flags":{"F":"true"}}],
+      "result":[{"token":"0", "flags":{"bamrich":"true"}},{"token":"1"}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"A":"false", "B":"true"}}],
+      "result":[{"token":"0", "flags":{"A":"true", "B":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"B":"false", "C":"true"}}],
+      "result":[{"token":"0", "flags":{"B":"true", "C":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"C":"false", "D":"true"}}],
+      "result":[{"token":"0", "flags":{"C":"true", "D":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"D":"false", "loose":"true"}}],
+      "result":[{"token":"0", "flags":{"D":"true", "loose":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"loose":"false", "pushable":"true"}}],
+      "result":[{"token":"0", "flags":{"loose":"true", "pushable":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"pushable":"false", "bam":"true"}}],
+      "result":[{"token":"0", "flags":{"pushable":"true", "bam":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"bam":"false", "bamrich":"true"}}],
+      "result":[{"token":"0", "flags":{"bam":"true", "bamrich":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"A":"false", "B":"true"}}],
+      "result":[{"token":"0", "flags":{"A":"true", "B":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"B":"false", "C":"true"}}],
+      "result":[{"token":"0", "flags":{"B":"true", "C":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"C":"false", "D":"true"}}],
+      "result":[{"token":"0", "flags":{"C":"true", "D":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"D":"false", "loose":"true"}}],
+      "result":[{"token":"0", "flags":{"D":"true", "loose":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"loose":"false", "pushable":"true"}}],
+      "result":[{"token":"0", "flags":{"loose":"true", "pushable":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"pushable":"false", "bam":"true"}}],
+      "result":[{"token":"0", "flags":{"pushable":"true", "bam":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"A":"false", "B":"true"}}],
+      "result":[{"token":"0", "flags":{"A":"true", "B":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"B":"false", "C":"true"}}],
+      "result":[{"token":"0", "flags":{"B":"true", "C":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"C":"false", "D":"true"}}],
+      "result":[{"token":"0", "flags":{"C":"true", "D":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"D":"false", "loose":"true"}}],
+      "result":[{"token":"0", "flags":{"D":"true", "loose":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"loose":"false", "pushable":"true"}}],
+      "result":[{"token":"0", "flags":{"loose":"true", "pushable":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"A":"false", "B":"true"}}],
+      "result":[{"token":"0", "flags":{"A":"true", "B":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"B":"false", "C":"true"}}],
+      "result":[{"token":"0", "flags":{"B":"true", "C":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"C":"false", "D":"true"}}],
+      "result":[{"token":"0", "flags":{"C":"true", "D":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"D":"false", "loose":"true"}}],
+      "result":[{"token":"0", "flags":{"D":"true", "loose":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"A":"false", "B":"true"}}],
+      "result":[{"token":"0", "flags":{"A":"true", "B":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"B":"false", "C":"true"}}],
+      "result":[{"token":"0", "flags":{"B":"true", "C":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"C":"false", "D":"true"}}],
+      "result":[{"token":"0", "flags":{"C":"true", "D":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"A":"false", "B":"true"}}],
+      "result":[{"token":"0", "flags":{"A":"true", "B":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"B":"false", "C":"true"}}],
+      "result":[{"token":"0", "flags":{"B":"true", "C":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"A":"false", "B":"true"}}],
+      "result":[{"token":"0", "flags":{"A":"true", "B":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*"}],
+      "result":[{"token":"0", "flags":{"A":"false", "E":"false", "F":"false", "loose":"false", "pushable":"false", "bam":"false", "bamrich":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"B":"true", "C":"false", "D":"false"}}],
+      "result":[{"token":"0", "flags":{"E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"B":"true", "C":"true", "D":"false"}}],
+      "result":[{"token":"0", "flags":{"F":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*"}],
+      "result":[{"token":"0", "flags":{"A":"false", "B":"false", "C":"false", "D":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"path", "flags":{"F":"true"}}],
+      "result":[{"token":"gem"}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"gem"}],
+      "result":[{"token":"gem", "flags":{"B":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"gem", "flags":{"E":"true"}}],
+      "result":[{"token":"0", "flags":{"B":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"gem", "flags":{"F":"true"}}],
+      "result":[{"token":"0", "flags":{"B":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"gem", "flags":{"B":"true"}}],
+      "result":[{"token":"path"}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*"}],
+      "result":[{"token":"0", "flags":{"A":"false", "B":"false", "C":"false", "D":"false", "E":"false", "F":"false", "loose":"false", "pushable":"false", "bam":"false", "bamrich":"false"}}]
+    }
+    ],
+  "map":[
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "exit", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "exit", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "path", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "gem", "path", "path", "path", "path", "path", "path", "gem", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "gem", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "path", "path", "path", "gem", "path", "path", "path", "path", "gem", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "gem", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "gem", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "path", "path", "path", "path", "path", "gem", "path", "path", "path", "gem", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "gem", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "path", "path", "path", "gem", "path", "gem", "gem", "path", "path", "path", "path", "gem", "path", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "path", "path", "path", "path", "path", "gem", "path", "path", "path", "path", "path", "path", "path", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "path", "path", "path", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "me", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "exit", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "exit", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"]
+    ]
+}

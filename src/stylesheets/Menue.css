@@ -1,0 +1,56 @@
+.menuePane {
+-fx-background-color: black;
+-fx-alignment: center;
+-fx-spacing: 10;
+-fx-min-width: 700;
+-fx-max-width: 700;
+-fx-min-height: 400;
+-fx-max-height: 400;
+}
+
+.buttonBox {
+-fx-background-color: black;
+-fx-alignment: center;
+-fx-padding: 10px;
+-fx-hgap: 10;
+-fx-vgap: 10;
+}
+
+.menueButton {
+-fx-background-color: white;
+-fx-font-family: "Courier New";
+-fx-font-size: 10px;
+-fx-padding: 10;
+-fx-spacing: 10;
+-fx-min-width: 120;
+-fx-max-width: 120;
+-fx-min-height: 120;
+-fx-max-height: 120;
+}
+
+.menueButton:hover {
+-fx-background-color: gainsboro;
+}
+
+.menueLabel {
+-fx-text-fill: white;
+-fx-font-family: "Courier New";
+}
+
+.editorButton {
+-fx-padding: 10px;
+}
+
+.returnButton {
+-fx-min-width: 40;
+-fx-max-width: 40;
+-fx-min-height: 40;
+-fx-max-height: 40;
+}
+
+.addLevelButton {
+-fx-min-width: 90;
+-fx-max-width: 90;
+-fx-min-height: 90;
+-fx-max-height: 90;
+}

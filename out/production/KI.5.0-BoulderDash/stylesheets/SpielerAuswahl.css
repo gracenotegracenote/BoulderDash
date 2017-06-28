@@ -1,0 +1,40 @@
+.SpielerAuswahl{
+-fx-background-color: black;
+-fx-padding: 20 0 20 20;
+-fx-spacing: 10px;
+}
+
+.txt{
+ -fx-min-width:  70;
+ -fx-min-height: 30;
+}
+
+.label{
+-fx-text-fill: white;
+-fx-padding: 10 10 10 10;
+}
+
+.neuerSpielerButton{
+-fx-background-color: black;
+-fx-text-fill: white;
+-fx-effect: dropshadow(one-pass-box,white,8,0,0,0);
+-fx-min-width: 120;
+-fx-max-width: 120;
+-fx-min-height: 120;
+-fx-max-height: 120;
+-fx-content-display: top;
+}
+
+.knopf {
+-fx-background-color: white;
+-fx-text-fill: black;
+-fx-min-width: 150;
+-fx-max-width: 150;
+}
+
+.vBox{
+-fx-spacing: 10px;
+-fx-padding: 0 50 10 30;
+}
+
+

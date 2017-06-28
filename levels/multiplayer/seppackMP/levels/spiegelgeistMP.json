@@ -1,0 +1,250 @@
+{
+  "gems":[0,1,2,3,4],
+  "height":20,
+  "name":"Spukende Spiegelgeist",
+  "time": [240,180,110,75,55],
+  "width":20,
+  "ticksPerSecond": 6,
+
+  "prerules":[
+    { "situation":"right",
+      "direction":"north",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "A":"true"}},{"token":"path", "flags":{"moved":"false"}}],
+      "result":[{"token":"path", "flags":{"moved":"true", "A":"false"}},{"token":"ghostling", "flags":{"moved":"true", "A":"true"}}]
+
+    },
+    { "situation":"left",
+      "direction":"south",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "A":"true"}},{"token":"path", "flags":{"moved":"false"}}],
+      "result":[{"token":"path", "flags":{"moved":"true", "A":"false"}},{"token":"ghostling", "flags":{"moved":"true", "A":"true"}}]
+
+    },
+    { "situation":"up",
+      "direction":"east",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "A":"true"}},{"token":"path", "flags":{"moved":"false"}}],
+      "result":[{"token":"path", "flags":{"moved":"true", "A":"false"}},{"token":"ghostling", "flags":{"moved":"true", "A":"true"}}]
+
+    },
+    { "situation":"down",
+      "direction":"west",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "A":"true"}},{"token":"path", "flags":{"moved":"false"}}],
+      "result":[{"token":"path", "flags":{"moved":"true", "A":"false"}},{"token":"ghostling", "flags":{"moved":"true", "A":"true"}}]
+
+    },
+    { "situation":"right",
+      "direction":"west",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "B":"true"}},{"token":"path", "flags":{"moved":"false"}}],
+      "result":[{"token":"path", "flags":{"moved":"true", "B":"false"}},{"token":"ghostling", "flags":{"moved":"true", "B":"true"}}]
+
+    },
+    { "situation":"left",
+      "direction":"east",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "B":"true"}},{"token":"path", "flags":{"moved":"false"}}],
+      "result":[{"token":"path", "flags":{"moved":"true", "B":"false"}},{"token":"ghostling", "flags":{"moved":"true", "B":"true"}}]
+
+    },
+    { "situation":"up",
+      "direction":"north",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "B":"true"}},{"token":"path", "flags":{"moved":"false"}}],
+      "result":[{"token":"path", "flags":{"moved":"true", "B":"false"}},{"token":"ghostling", "flags":{"moved":"true", "B":"true"}}]
+
+    },
+    { "situation":"down",
+      "direction":"south",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "B":"true"}},{"token":"path", "flags":{"moved":"false"}}],
+      "result":[{"token":"path", "flags":{"moved":"true", "B":"false"}},{"token":"ghostling", "flags":{"moved":"true", "B":"true"}}]
+
+    },
+    { "situation":"right",
+      "direction":"west",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "C":"true"}},{"token":"path", "flags":{"moved":"false"}}],
+      "result":[{"token":"path", "flags":{"moved":"true", "C":"false"}},{"token":"ghostling", "flags":{"moved":"true", "C":"true"}}]
+
+    },
+    { "situation":"left",
+      "direction":"north",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "C":"true"}},{"token":"path", "flags":{"moved":"false"}}],
+      "result":[{"token":"path", "flags":{"moved":"true", "C":"false"}},{"token":"ghostling", "flags":{"moved":"true", "C":"true"}}]
+
+    },
+    { "situation":"up",
+      "direction":"east",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "C":"true"}},{"token":"path", "flags":{"moved":"false"}}],
+      "result":[{"token":"path", "flags":{"moved":"true", "C":"false"}},{"token":"ghostling", "flags":{"moved":"true", "C":"true"}}]
+
+    },
+    { "situation":"down",
+      "direction":"south",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "C":"true"}},{"token":"path", "flags":{"moved":"false"}}],
+      "result":[{"token":"path", "flags":{"moved":"true", "C":"false"}},{"token":"ghostling", "flags":{"moved":"true", "C":"true"}}]
+
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*"}],
+      "result":[{"token":"0", "flags":{"D":"false"}}]
+
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"ghostling"},{"token":["wall", "me", "me2", "me3", "me4", "exit", "stone"]}],
+      "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1"}]
+
+    },
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"ghostling"},{"token":["wall", "me", "me2", "me3", "me4", "exit", "stone"]}],
+      "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1"}]
+
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"ghostling"},{"token":["wall", "me", "me2", "me3", "me4", "exit", "stone"]}],
+      "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1"}]
+
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"ghostling"},{"token":["wall", "me", "me2", "me3", "me4", "exit", "stone"]}],
+      "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1"}]
+
+    },
+
+	// Ghostling trifft ME
+		// Player 1
+	{ "situation":"any",
+	  "direction":"east",
+	  "original":[{"token":"ghostling"},{"token":"me"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+
+	},
+	{ "situation":"any",
+	  "direction":"north",
+	  "original":[{"token":"ghostling"},{"token":"me"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+
+	},
+	{ "situation":"any",
+	  "direction":"south",
+	  "original":[{"token":"ghostling"},{"token":"me"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+
+	},
+	{ "situation":"any",
+	  "direction":"west",
+	  "original":[{"token":"ghostling"},{"token":"me"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+	},
+
+	// Player 2
+	{ "situation":"any",
+	  "direction":"east",
+	  "original":[{"token":"ghostling"},{"token":"me2"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+
+	},
+	{ "situation":"any",
+	  "direction":"north",
+	  "original":[{"token":"ghostling"},{"token":"me2"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+
+	},
+	{ "situation":"any",
+	  "direction":"south",
+	  "original":[{"token":"ghostling"},{"token":"me2"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+
+	},
+	{ "situation":"any",
+	  "direction":"west",
+	  "original":[{"token":"ghostling"},{"token":"me2"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+	},
+
+	// Player 3
+	{ "situation":"any",
+	  "direction":"east",
+	  "original":[{"token":"ghostling"},{"token":"me3"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+
+	},
+	{ "situation":"any",
+	  "direction":"north",
+	  "original":[{"token":"ghostling"},{"token":"me3"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+
+	},
+	{ "situation":"any",
+	  "direction":"south",
+	  "original":[{"token":"ghostling"},{"token":"me3"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+
+	},
+	{ "situation":"any",
+	  "direction":"west",
+	  "original":[{"token":"ghostling"},{"token":"me3"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+	},
+
+	// Player 4
+	{ "situation":"any",
+	  "direction":"east",
+	  "original":[{"token":"ghostling"},{"token":"me4"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+
+	},
+	{ "situation":"any",
+	  "direction":"north",
+	  "original":[{"token":"ghostling"},{"token":"me4"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+
+	},
+	{ "situation":"any",
+	  "direction":"south",
+	  "original":[{"token":"ghostling"},{"token":"me4"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+
+	},
+	{ "situation":"any",
+	  "direction":"west",
+	  "original":[{"token":"ghostling"},{"token":"me4"}],
+	  "result":[{"token":"ghostling", "flags":{"D":"true"}},{"token":"1", "flags":{"gameover":"true"}}]
+	},
+
+
+	{ "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*"},{"token":"*", "flags":{"D":"true"}},{"token":"*"}],
+      "result":[{"token":"wall", "flags":{"D":"true"}},{"token":"wall", "flags":{"D":"true"}},{"token":"wall", "flags":{"D":"true"}}]
+
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"*"},{"token":"*", "flags":{"D":"true"}},{"token":"*"}],
+      "result":[{"token":"wall", "flags":{"D":"true"}},{"token":"wall", "flags":{"D":"true"}},{"token":"wall", "flags":{"D":"true"}}]
+
+    }
+    ],
+  "map":[
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "exit", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+    ["wall", "gem", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "gem", "wall"],
+    ["wall", "wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "extratime", "mud", "mud", "wall", "wall"],
+    ["wall", "path", "path", "path", "path", {"token":"ghostling", "flags":{"B":"true"}}, "path", "path", "path", "path", "path", "path", "path", "path", "path", {"token":"ghostling", "flags":{"A":"true"}}, "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "me2", "path", "path", {"token":"ghostling", "flags":{"B":"true"}}, "path", "path", "path", "path", "me", "path", "path", "path", "path", {"token":"ghostling", "flags":{"B":"true"}}, "path", "path", "path", "path", "wall"],
+    ["wall", "me3", "path", "path", "path", {"token":"ghostling", "flags":{"A":"true"}}, "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "me4", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", {"token":"ghostling", "flags":{"A":"true"}}, "path", {"token":"ghostling", "flags":{"C":"true"}}, "path", "path", "wall"],
+    ["wall", "path", "path", "path", {"token":"ghostling", "flags":{"B":"true"}}, "path", "path", "path", "path", {"token":"ghostling", "flags":{"C":"true"}}, "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", {"token":"ghostling", "flags":{"A":"true"}}, "path", "path", "path", "wall"],
+    ["wall", "path", "path", {"token":"ghostling", "flags":{"A":"true"}}, "path", "path", "path", "path", "path", "path", "path", {"token":"ghostling", "flags":{"B":"true"}}, "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", {"token":"ghostling", "flags":{"C":"true"}}, "path", "path", "path", "path", {"token":"ghostling", "flags":{"A":"true"}}, "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", {"token":"ghostling", "flags":{"A":"true"}}, "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", {"token":"ghostling", "flags":{"C":"true"}}, "path", "wall"],
+    ["wall", "path", "path", {"token":"ghostling", "flags":{"C":"true"}}, "path", "path", "path", "path", "path", "path", "path", {"token":"ghostling", "flags":{"B":"true"}}, "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", {"token":"ghostling", "flags":{"C":"true"}}, "path", "path", "path", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", {"token":"ghostling", "flags":{"A":"true"}}, "path", "path", "path", {"token":"ghostling", "flags":{"A":"true"}}, "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall", "wall"],
+    ["wall", "gem", "path", "path", "path", "stone", "path", "path", "path", "path", "path", "path", "path", "stone", "path", "path", "path", "path", "gem", "wall"],
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"]
+    ]
+}

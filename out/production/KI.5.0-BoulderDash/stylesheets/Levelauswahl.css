@@ -1,0 +1,21 @@
+.levelAuswahl {
+-fx-background-color: black;
+-fx-alignment: center;
+
+}
+
+.text {
+-fx-text-fill: white;
+}
+
+.levelButton {
+-fx-background-color: white ;
+-fx-font-family: "Courier New";
+-fx-font-size: 10px;
+}
+
+.levelButton:hover {
+-fx-background-color: gainsboro;
+}
+
+

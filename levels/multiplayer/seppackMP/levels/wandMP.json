@@ -1,0 +1,71 @@
+{
+  "gems": [9,13,17,21,26],
+  "height":28,
+  "name":"Die wachsende Wand",
+  "time": [230,150,96,67,36],
+  "width":16,
+  "ticksPerSecond": 5,
+
+  "prerules":[
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"path", "flags":{"D":"true", "E":"true"}}],
+      "result":[{"token":"wall", "flags":{"D":"false", "E":"false"}}]
+    
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"wall"},{"token":"path", "flags":{"D":"true"}}],
+      "result":[{"token":"wall"},{"token":"path", "flags":{"E":"true"}}]
+    
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"wall"},{"token":"path"}],
+      "result":[{"token":"wall"},{"token":"path", "flags":{"D":"true"}}]
+    
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"wall"},{"token":"path", "flags":{"D":"true"}}],
+      "result":[{"token":"wall"},{"token":"path", "flags":{"E":"true"}}]
+    
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"wall"},{"token":"path"}],
+      "result":[{"token":"wall"},{"token":"path", "flags":{"D":"true"}}]
+    
+    }
+    ],
+  "map":[
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+    ["wall", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "wall"],
+    ["wall", "mud", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "mud", "wall"],
+    ["wall", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "wall"],
+    ["wall", "mud", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "mud", "wall"],
+    ["wall", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "wall"],
+    ["wall", "mud", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "bricks", "wall", "wall"],
+    ["wall", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "wall"],
+    ["wall", "mud", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "mud", "wall"],
+    ["wall", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "wall"],
+    ["wall", "mud", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "mud", "wall"],
+    ["wall", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "wall"],
+    ["wall", "wall", "bricks", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "mud", "wall"],
+    ["wall", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "wall"],
+    ["wall", "mud", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "mud", "wall"],
+    ["wall", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "wall"],
+    ["wall", "mud", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "mud", "wall"],
+    ["wall", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "wall"],
+    ["wall", "mud", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "mud", "wall"],
+    ["wall", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "wall"],
+    ["wall", "mud", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "mud", "wall"],
+    ["wall", "gem", "path", "path", "path", "path", "path", "path", "path", "me2", "me3", "me4", "path", "path", "gem", "wall"],
+    ["wall", "mud", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "mud", "wall"],
+    ["wall", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "wall"],
+    ["wall", "mud", "path", "path", "path", "path", "me", "path", "path", "path", "path", "path", "path", "path", "extratime", "wall"],
+    ["wall", "gem", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "gem", "wall"],
+    ["wall", "mud", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "mud", "wall"],
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "exit", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"]
+    ]
+}

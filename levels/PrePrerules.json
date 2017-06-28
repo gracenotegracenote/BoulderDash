@@ -1,0 +1,63 @@
+[
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":"*"}],
+		"result": [{"token":"0","flags":{"moved":"false"}}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":"*"}],
+		"result": [{"token":"0","flags":{"falling":"false"}}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":"*"}],
+		"result": [{"token":"0","flags":{"rich":"false"}}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":"*"}],
+		"result": [{"token":"0","flags":{"bam":"false"}}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":"*"}],
+		"result": [{"token":"0","flags":{"bamrich":"false"}}]
+	},
+
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":["stone","gem"]}],
+		"result": [{"token":"0","flags":{"loose":"true"}}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":["me", "mud", "sieve", "exit", "wall", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "water", "ice", "machine", "norththing", "eastthing", "souththing", "westthing", "ballon", "slime"]}],
+		"result": [{"token":"0","flags":{"loose":"false"}}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":["stone","gem","bricks"]}],
+		"result": [{"token":"0","flags":{"slippery":"true"}}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":["me", "mud", "sieve", "exit", "wall", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "water", "ice", "machine", "norththing", "eastthing", "souththing", "westthing", "ballon", "slime"]}],
+		"result": [{"token":"0","flags":{"slippery":"false"}}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":"stone"}],
+		"result": [{"token":"0","flags":{"pushable":"true"}}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":["me", "gem", "mud", "sieve", "exit", "wall", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "water", "ice", "machine", "norththing", "eastthing", "souththing", "westthing", "ballon", "slime"]}],
+		"result": [{"token":"0","flags":{"pushable":"false"}}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":"explosion"}],
+		"result": [{"token":"path"}]
+	}
+]

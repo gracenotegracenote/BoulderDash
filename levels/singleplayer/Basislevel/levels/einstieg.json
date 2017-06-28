@@ -1,0 +1,21 @@
+{
+  "gems" :[5,8,11,15,17],
+  "height":10,
+  "name":"Bayrische Boazn",
+  "time":[120,90,50,25,15],
+  "width":15,
+  "ticksPerSecond":7,
+
+  "map":[
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+    ["wall", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "wall"],
+    ["wall", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "bricks", "bricks", "bricks", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "bricks", "exit", "bricks", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "me", "mud", "mud", "bricks", "gem", "bricks", "mud", "mud", "path", "path", "path", "path", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "gem", "mud", "mud", "mud", "path", "path", "path", "path", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "gem", "mud", "mud", "mud", "path", "path", "path", "path", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "gem", "mud", "mud", "mud", "path", "path", "path", "path", "wall"],
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"]
+    ]
+}

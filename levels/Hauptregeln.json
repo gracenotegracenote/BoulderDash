@@ -1,0 +1,968 @@
+[
+  // Bewegung
+  	// Player 1
+	{	"situation": "up",
+		"direction": "north",
+		"original": [{"token":"me", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me", "flags":{"moved":"true"}}]
+	},
+	{	"situation": "right",
+		"direction": "east",
+		"original": [{"token":"me", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me","flags":{"moved":"true"}}]
+	},
+	{	"situation": "down",
+		"direction": "south",
+		"original": [{"token":"me", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me","flags":{"moved":"true"}}]
+	},
+	{	"situation": "left",
+		"direction": "west",
+		"original": [{"token":"me", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me","flags":{"moved":"true"}}]
+	},
+
+  	// Player 2
+	{	"situation": "up2",
+	  "direction": "north",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me2", "flags":{"moved":"true"}}]
+	},
+	{	"situation": "right2",
+	  "direction": "east",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me2","flags":{"moved":"true"}}]
+	},
+	{	"situation": "down2",
+	  "direction": "south",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me2","flags":{"moved":"true"}}]
+	},
+	{	"situation": "left2",
+	  "direction": "west",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me2","flags":{"moved":"true"}}]
+	},
+
+	// Player 3
+	{	"situation": "up3",
+	  "direction": "north",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me3", "flags":{"moved":"true"}}]
+	},
+	{	"situation": "right3",
+	  "direction": "east",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me3","flags":{"moved":"true"}}]
+	},
+	{	"situation": "down3",
+	  "direction": "south",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me3","flags":{"moved":"true"}}]
+	},
+	{	"situation": "left3",
+	  "direction": "west",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me3","flags":{"moved":"true"}}]
+	},
+
+	// Player 4
+	{	"situation": "up4",
+	  "direction": "north",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me4", "flags":{"moved":"true"}}]
+	},
+	{	"situation": "right4",
+	  "direction": "east",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me4","flags":{"moved":"true"}}]
+	},
+	{	"situation": "down4",
+	  "direction": "south",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me4","flags":{"moved":"true"}}]
+	},
+	{	"situation": "left4",
+	  "direction": "west",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}},{"token":["path", "mud"]}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me4","flags":{"moved":"true"}}]
+	},
+
+  // Me sammelt Gems
+  	// Player 1
+	{	"situation": "up",
+		"direction": "north",
+		"original": [{"token":"me", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me", "flags":{"moved":"true","rich":"true"}}]
+	},
+	{	"situation": "right",
+		"direction": "east",
+		"original": [{"token":"me", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me","flags":{"moved":"true","rich":"true"}}]
+	},
+	{	"situation": "down",
+		"direction": "south",
+		"original": [{"token":"me", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me","flags":{"moved":"true","rich":"true"}}]
+	},
+	{	"situation": "left",
+		"direction": "west",
+		"original": [{"token":"me", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me","flags":{"moved":"true","rich":"true"}}]
+	},
+
+	// Player 2
+	{	"situation": "up2",
+	  "direction": "north",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me2", "flags":{"moved":"true","rich":"true"}}]
+	},
+	{	"situation": "right2",
+	  "direction": "east",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me2","flags":{"moved":"true","rich":"true"}}]
+	},
+	{	"situation": "down2",
+	  "direction": "south",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me2","flags":{"moved":"true","rich":"true"}}]
+	},
+	{	"situation": "left2",
+	  "direction": "west",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me2","flags":{"moved":"true","rich":"true"}}]
+	},
+
+	// Player 3
+	{	"situation": "up3",
+	  "direction": "north",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me3", "flags":{"moved":"true","rich":"true"}}]
+	},
+	{	"situation": "right3",
+	  "direction": "east",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me3","flags":{"moved":"true","rich":"true"}}]
+	},
+	{	"situation": "down3",
+	  "direction": "south",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me3","flags":{"moved":"true","rich":"true"}}]
+	},
+	{	"situation": "left3",
+	  "direction": "west",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me3","flags":{"moved":"true","rich":"true"}}]
+	},
+
+	// Player 4
+	{	"situation": "up4",
+	  "direction": "north",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me4", "flags":{"moved":"true","rich":"true"}}]
+	},
+	{	"situation": "right4",
+	  "direction": "east",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me4","flags":{"moved":"true","rich":"true"}}]
+	},
+	{	"situation": "down4",
+	  "direction": "south",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me4","flags":{"moved":"true","rich":"true"}}]
+	},
+	{	"situation": "left4",
+	  "direction": "west",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}},{"token":"gem", "flags":{"falling":"false"}}],
+	  "result": [{"token":"path","flags":{"moved":"true"}},{"token":"me4","flags":{"moved":"true","rich":"true"}}]
+	},
+
+  // Me META-Zuege
+  	// Player 1
+	{	"situation": "metaup",
+		"direction": "north",
+		"original": [{"token":"me", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+		"result": [{"token":"me","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+	{	"situation": "metaright",
+		"direction": "east",
+		"original": [{"token":"me", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+		"result": [{"token":"me","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+	{	"situation": "metadown",
+		"direction": "south",
+		"original": [{"token":"me", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+		"result": [{"token":"me","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+	{	"situation": "metaleft",
+		"direction": "west",
+		"original": [{"token":"me", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+		"result": [{"token":"me","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+
+  	// Player 2
+	{	"situation": "metaup2",
+	  "direction": "north",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+	  "result": [{"token":"me2","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+	{	"situation": "metaright2",
+	  "direction": "east",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+	  "result": [{"token":"me2","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+	{	"situation": "metadown2",
+	  "direction": "south",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+	  "result": [{"token":"me2","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+	{	"situation": "metaleft2",
+	  "direction": "west",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+	  "result": [{"token":"me2","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+
+	// Player 3
+	{	"situation": "metaup3",
+	  "direction": "north",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+	  "result": [{"token":"me3","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+	{	"situation": "metaright3",
+	  "direction": "east",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+	  "result": [{"token":"me3","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+	{	"situation": "metadown3",
+	  "direction": "south",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+	  "result": [{"token":"me3","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+	{	"situation": "metaleft3",
+	  "direction": "west",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+	  "result": [{"token":"me3","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+
+	// Player 4
+	{	"situation": "metaup4",
+	  "direction": "north",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+	  "result": [{"token":"me4","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+	{	"situation": "metaright4",
+	  "direction": "east",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+	  "result": [{"token":"me4","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+	{	"situation": "metadown4",
+	  "direction": "south",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+	  "result": [{"token":"me4","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+	{	"situation": "metaleft4",
+	  "direction": "west",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}}, {"token":"mud", "flags":{"moved":"false"}}],
+	  "result": [{"token":"me4","flags":{"moved":"true"}},{"token":"path","flags":{"moved":"true"}}]
+	},
+
+
+  // Me schiebt Steine
+  	// Player 1
+	{	"situation": "right",
+		"direction": "east",
+		"original": [{"token":"me", "flags":{"moved":"false"}}, {"token":"*", "flags":{"pushable":"true"}}, {"token":"path", "flags":{"moved":"false"}}],
+		"result": [{"token":"path", "flags":{"moved":"true"}},{"token":"me", "flags":{"moved":"true"}},{"token":"1", "flags":{"moved":"true"}}]
+	},
+	{	"situation": "left",
+		"direction": "west",
+		"original": [{"token":"me", "flags":{"moved":"false"}}, {"token":"*", "flags":{"pushable":"true"}}, {"token":"path", "flags":{"moved":"false"}}],
+		"result": [{"token":"path", "flags":{"moved":"true"}},{"token":"me", "flags":{"moved":"true"}},{"token":"1", "flags":{"moved":"true"}}]
+	},
+
+	// Player 2
+	{	"situation": "right2",
+	  "direction": "east",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}}, {"token":"*", "flags":{"pushable":"true"}}, {"token":"path", "flags":{"moved":"false"}}],
+	  "result": [{"token":"path", "flags":{"moved":"true"}},{"token":"me2", "flags":{"moved":"true"}},{"token":"1", "flags":{"moved":"true"}}]
+	},
+	{	"situation": "left2",
+	  "direction": "west",
+	  "original": [{"token":"me2", "flags":{"moved":"false"}}, {"token":"*", "flags":{"pushable":"true"}}, {"token":"path", "flags":{"moved":"false"}}],
+	  "result": [{"token":"path", "flags":{"moved":"true"}},{"token":"me2", "flags":{"moved":"true"}},{"token":"1", "flags":{"moved":"true"}}]
+	},
+
+	// Player 3
+	{	"situation": "right3",
+	  "direction": "east",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}}, {"token":"*", "flags":{"pushable":"true"}}, {"token":"path", "flags":{"moved":"false"}}],
+	  "result": [{"token":"path", "flags":{"moved":"true"}},{"token":"me3", "flags":{"moved":"true"}},{"token":"1", "flags":{"moved":"true"}}]
+	},
+	{	"situation": "left3",
+	  "direction": "west",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}}, {"token":"*", "flags":{"pushable":"true"}}, {"token":"path", "flags":{"moved":"false"}}],
+	  "result": [{"token":"path", "flags":{"moved":"true"}},{"token":"me3", "flags":{"moved":"true"}},{"token":"1", "flags":{"moved":"true"}}]
+	},
+
+	// Player 4
+	{	"situation": "right4",
+	  "direction": "east",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}}, {"token":"*", "flags":{"pushable":"true"}}, {"token":"path", "flags":{"moved":"false"}}],
+	  "result": [{"token":"path", "flags":{"moved":"true"}},{"token":"me4", "flags":{"moved":"true"}},{"token":"1", "flags":{"moved":"true"}}]
+	},
+	{	"situation": "left4",
+	  "direction": "west",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}}, {"token":"*", "flags":{"pushable":"true"}}, {"token":"path", "flags":{"moved":"false"}}],
+	  "result": [{"token":"path", "flags":{"moved":"true"}},{"token":"me4", "flags":{"moved":"true"}},{"token":"1", "flags":{"moved":"true"}}]
+	},
+
+  // Stein faellt
+	{	"situation": "any",
+		"direction": "south",
+		"original": [{"token":"*", "flags":{"loose":"true", "falling":"false", "moved":"false"}}, {"token":"path","flags":{"moved":"false"}}],
+		"result": [{"token":"path", "flags":{"moved":"true"}}, {"token":"0", "flags":{"moved":"true", "falling":"true"}}]
+	},
+
+  // Richtungswechsel der Gegner
+  	// Swapling
+    {	"situation": "any",
+      "direction": "north",
+      "original": [{"token":"swapling","flags":{"up":"true"}}, {"token":["mud", "stone", "bricks", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime", "sieve", "wall", "gem", "exit"]}],
+      "result": [{"token":"swapling","flags":{"down":"true","up":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "south",
+      "original": [{"token":"swapling","flags":{"down":"true"}}, {"token":["mud", "stone", "bricks", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime", "sieve", "wall", "gem", "exit"]}],
+      "result": [{"token":"swapling","flags":{"up":"true","down":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "east",
+      "original": [{"token":"swapling","flags":{"right":"true"}}, {"token":["mud", "stone", "bricks", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime", "sieve", "wall", "gem", "exit"]}],
+      "result": [{"token":"swapling","flags":{"left":"true","right":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "west",
+      "original": [{"token":"swapling","flags":{"left":"true"}}, {"token":["mud", "stone", "bricks", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime", "sieve", "wall", "gem", "exit"]}],
+      "result": [{"token":"swapling","flags":{"right":"true","left":"false"}}, {"token":"1"}]
+    },
+  	// Xling
+    {	"situation": "any",
+      "direction": "north",
+      "original": [{"token":"xling","flags":{"up":"true"}}, {"token":["mud", "stone", "bricks", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime", "sieve", "wall", "gem", "exit"]}],
+      "result": [{"token":"xling","flags":{"left":"true","up":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "east",
+      "original": [{"token":"xling","flags":{"up":"true"}}, {"token":"path"}],
+      "result": [{"token":"xling","flags":{"right":"true","up":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "east",
+      "original": [{"token":"xling","flags":{"right":"true"}}, {"token":["mud", "stone", "bricks", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime", "sieve", "wall", "gem", "exit"]}],
+      "result": [{"token":"xling","flags":{"up":"true","right":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "south",
+      "original": [{"token":"xling","flags":{"right":"true"}}, {"token":"path"}],
+      "result": [{"token":"xling","flags":{"down":"true","right":"false"}}, {"token":"1"}]
+    },
+
+    {	"situation": "any",
+      "direction": "south",
+      "original": [{"token":"xling","flags":{"down":"true"}}, {"token":["mud", "stone", "bricks", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime", "sieve", "wall", "gem", "exit"]}],
+      "result": [{"token":"xling","flags":{"right":"true","down":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "west",
+      "original": [{"token":"xling","flags":{"down":"true"}}, {"token":"path"}],
+      "result": [{"token":"xling","flags":{"left":"true","down":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "west",
+      "original": [{"token":"xling","flags":{"left":"true"}}, {"token":["mud", "stone", "bricks", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime", "sieve", "wall", "gem", "exit"]}],
+      "result": [{"token":"xling","flags":{"down":"true","left":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "north",
+      "original": [{"token":"xling","flags":{"left":"true"}}, {"token":"path"}],
+      "result": [{"token":"xling","flags":{"up":"true","left":"false"}}, {"token":"1"}]
+    },
+	// Blockling
+    {	"situation": "any",
+      "direction": "north",
+      "original": [{"token":"blockling","flags":{"up":"true"}}, {"token":["mud", "stone", "bricks", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime", "sieve", "wall", "gem", "exit"]}],
+      "result": [{"token":"blockling","flags":{"right":"true","up":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "west",
+      "original": [{"token":"blockling","flags":{"up":"true"}}, {"token":"path"}],
+      "result": [{"token":"blockling","flags":{"left":"true","up":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "west",
+      "original": [{"token":"blockling","flags":{"left":"true"}}, {"token":["mud", "stone", "bricks", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime", "sieve", "wall", "gem", "exit"]}],
+      "result": [{"token":"blockling","flags":{"up":"true","left":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "south",
+      "original": [{"token":"blockling","flags":{"left":"true"}}, {"token":"path"}],
+      "result": [{"token":"blockling","flags":{"down":"true","right":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "south",
+      "original": [{"token":"blockling","flags":{"down":"true"}}, {"token":["mud", "stone", "bricks", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime", "sieve", "wall", "gem", "exit"]}],
+      "result": [{"token":"blockling","flags":{"left":"true","down":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "east",
+      "original": [{"token":"blockling","flags":{"down":"true"}}, {"token":"path"}],
+      "result": [{"token":"blockling","flags":{"right":"true","down":"false"}}, {"token":"1"}]
+    },
+
+    {	"situation": "any",
+      "direction": "east",
+      "original": [{"token":"blockling","flags":{"right":"true"}}, {"token":["mud", "stone", "bricks", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime", "sieve", "wall", "gem", "exit"]}],
+      "result": [{"token":"blockling","flags":{"down":"true","right":"false"}}, {"token":"1"}]
+    },
+    {	"situation": "any",
+      "direction": "north",
+      "original": [{"token":"blockling","flags":{"right":"true"}}, {"token":"path"}],
+      "result": [{"token":"blockling","flags":{"up":"true","right":"false"}}, {"token":"1"}]
+    },
+
+  // Bewegung der Gegner
+  	// * PATH bekommt Richtungsflags der Gegner, die in result gleich zurueckgesetzt werden sollen
+    // ** Richtungsflags von Gegnern sollen in result nochmal auf TRUE gesetzt werden, weil PATH keine Richtungsflags hatte (so werden sie hier per Hand uebertragen)
+    {	"situation": "any",
+      "direction": "north",
+      "original": [{"token":"swapling","flags":{"up":"true", "moved":"false"}}, {"token":"path"}],
+      "result": [{"token":"path","flags":{"moved":"true","up":"false"}}, {"token":"0", "flags":{"up":"true","moved":"true"}}]
+    },
+    {	"situation": "any",
+      "direction": "south",
+      "original": [{"token":"swapling","flags":{"down":"true", "moved":"false"}}, {"token":"path"}],
+      "result": [{"token":"path","flags":{"moved":"true","down":"false"}}, {"token":"0", "flags":{"down":"true","moved":"true"}}]
+    },
+    {	"situation": "any",
+      "direction": "east",
+      "original": [{"token":"swapling","flags":{"right":"true", "moved":"false"}}, {"token":"path"}],
+      "result": [{"token":"path","flags":{"moved":"true","right":"false"}}, {"token":"0", "flags":{"right":"true","moved":"true"}}]
+    },
+    {	"situation": "any",
+      "direction": "west",
+      "original": [{"token":"swapling","flags":{"left":"true"}, "moved":"false"}, {"token":"path"}],
+      "result": [{"token":"path","flags":{"moved":"true","left":"false"}}, {"token":"0", "flags":{"left":"true","moved":"true"}}]
+    },
+	{	"situation": "rare",
+		"direction": "north",
+		"original": [{"token":["xling","blockling"],"flags":{"up":"true", "moved":"false"}}, {"token":"path"}],
+		"result": [{"token":"path","flags":{"moved":"true","up":"false"}}, {"token":"0", "flags":{"up":"true","moved":"true"}}]
+	},
+	{	"situation": "rare",
+		"direction": "south",
+		"original": [{"token":["xling","blockling"],"flags":{"down":"true", "moved":"false"}}, {"token":"path"}],
+		"result": [{"token":"path","flags":{"moved":"true","down":"false"}}, {"token":"0", "flags":{"down":"true","moved":"true"}}]
+	},
+	{	"situation": "rare",
+		"direction": "east",
+		"original": [{"token":["xling","blockling"],"flags":{"right":"true", "moved":"false"}}, {"token":"path"}],
+		"result": [{"token":"path","flags":{"moved":"true","right":"false"}}, {"token":"0", "flags":{"right":"true","moved":"true"}}]
+	},
+	{	"situation": "rare",
+		"direction": "west",
+		"original": [{"token":["xling","blockling"],"flags":{"left":"true"}, "moved":"false"}, {"token":"path"}],
+		"result": [{"token":"path","flags":{"moved":"true","left":"false"}}, {"token":"0", "flags":{"left":"true","moved":"true"}}]
+	},
+
+  // Player trifft Gegner
+    {	"situation": "any",
+      "direction": "north",
+      "original": [{"token":["swapling", "blockling", "xling"],"flags":{"up":"true"}}, {"token":["me", "me2", "me3", "me4"]}],
+      "result": [{"token":"0"}, {"token":"1", "flags":{"bamrich":"true"}}]
+    },
+    {	"situation": "any",
+      "direction": "east",
+      "original": [{"token":["swapling", "blockling", "xling"],"flags":{"right":"true"}}, {"token":["me", "me2", "me3", "me4"]}],
+      "result": [{"token":"0"}, {"token":"1", "flags":{"bamrich":"true"}}]
+    },
+    {	"situation": "any",
+      "direction": "south",
+      "original": [{"token":["swapling", "blockling", "xling"],"flags":{"down":"true"}}, {"token":["me", "me2", "me3", "me4"]}],
+      "result": [{"token":"0"}, {"token":"1", "flags":{"bamrich":"true"}}]
+    },
+    {	"situation": "any",
+      "direction": "west",
+      "original": [{"token":["swapling", "blockling", "xling"],"flags":{"left":"true"}}, {"token":["me", "me2", "me3", "me4"]}],
+      "result": [{"token":"0"}, {"token":"1", "flags":{"bamrich":"true"}}]
+    },
+
+  // Rutschen
+  	// Fall SLIPPERY true-true
+	{	"situation": "any",
+		"direction": "south",
+		"original": [{"token":"*","flags":{"loose":"true", "moved":"false"}}, {"token":"*", "flags":{"slippery":"true"}}],
+		"result": [{"token":"0","flags":{"rutscht":"true"}}, {"token":"1", "flags":{"rutscht":"true"}}]
+	},
+  	// Fall SLIPPERY true-true-false (zum Zuruecksetzen von RUTSCHT beim Element, das nicht rutschen darf)
+	{	"situation": "any",
+	  "direction": "south",
+	  "original": [{"token":"*","flags":{"loose":"true", "moved":"false"}}, {"token":"*", "flags":{"slippery":"true"}}, {"token":"*", "flags":{"slippery":"false"}}],
+	  "result": [{"token":"0","flags":{"rutscht":"true"}}, {"token":"1", "flags":{"rutscht":"false"}}, {"token":"2"}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":["stone", "gem"],"flags":{"rutscht":"true"}}, {"token":"path"}],
+		"result": [{"token":"0","flags":{"rutschtr":"true", "rutscht":"false"}},{"token":"1"}]
+	},
+	{	"situation": "any",
+		"direction": "southeast",
+		"original": [{"token":"*","flags":{"rutschtr":"true"}}, {"token":"path"}],
+		"result": [{"token":"path","flags":{"moved":"true"}}, {"token":"0", "flags":{"moved":"true", "rutschtr":"false", "falling":"true"}}]
+	},
+	{	"situation": "any",
+		"direction": "west",
+		"original": [{"token":["stone", "gem"],"flags":{"rutscht":"true"}},{"token":"path"}],
+		"result": [{"token":"0","flags":{"rutschtl":"true", "rutscht":"false"}}, {"token":"1"}]
+	},
+	{	"situation": "any",
+		"direction": "southwest",
+		"original": [{"token":"*","flags":{"rutschtl":"true"}}, {"token":"path"}],
+		"result": [{"token":"path","flags":{"moved":"true"}}, {"token":"0", "flags":{"moved":"true", "rutschtl":"false","falling":"true"}}]
+	},
+
+  // Gegenstaende fallen auf Player
+	{	"situation": "any",
+		"direction": "south",
+		"original": [{"token":"*","flags":{"falling":"true"}}, {"token":["me", "me2", "me3", "me4"]}],
+		"result": [{"token":"path", "flags":{"moved":"true"}}, {"token":"0", "flags":{"bamrich":"true"}}]
+	},
+	// Bamrich: Umwandlung der herumliegenden Feldern in Gems
+	{	"situation": "any",
+		"direction": "north",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "northeast",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "southeast",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "south",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "southwest",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "west",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "northwest",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path","mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "ballon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	//me wird durch Stone bzw Gem ersetzt,Stone bzw Gem bekommt das flag bamrich, damit das Fenster für Gameover erscheint,
+	//muss Stone bzw Gem auch in gem mit flag gemovertrue umwandelt werden
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":["me", "me2", "me3", "me4","stone","gem"],"flags":{"bamrich":"true"}}],
+		"result": [{"token":"gem", "flags":{"gameover":"true"}}]
+	},
+
+	//Me explodiert in edelsteine --> gameover
+	{	"situation": "any",
+		"direction": "north",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["me","me2", "me3", "me4"]}],
+		"result": [{"token":"0"}, {"token":"gem", "flags":{"gameover":"true"}}]
+	},
+	{	"situation": "any",
+		"direction": "northeast",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["me","me2", "me3", "me4"]}],
+		"result": [{"token":"0"}, {"token":"gem", "flags":{"gameover":"true"}}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["me","me2", "me3", "me4"]}],
+		"result": [{"token":"0"}, {"token":"gem", "flags":{"gameover":"true"}}]
+	},
+	{	"situation": "any",
+		"direction": "southeast",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["me","me2", "me3", "me4"]}],
+		"result": [{"token":"0"}, {"token":"gem", "flags":{"gameover":"true"}}]
+	},
+	{	"situation": "any",
+		"direction": "south",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["me","me2", "me3", "me4"]}],
+		"result": [{"token":"0"}, {"token":"gem", "flags":{"gameover":"true"}}]
+	},
+	{	"situation": "any",
+		"direction": "southwest",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["me","me2", "me3", "me4"]}],
+		"result": [{"token":"0"}, {"token":"gem", "flags":{"gameover":"true"}}]
+	},
+	{	"situation": "any",
+		"direction": "west",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["me","me2", "me3", "me4"]}],
+		"result": [{"token":"0"}, {"token":"gem", "flags":{"gameover":"true"}}]
+	},
+	{	"situation": "any",
+		"direction": "northwest",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["me","me2", "me3", "me4"]}],
+		"result": [{"token":"gem"}, {"token":"gem", "flags":{"gameover":"true"}}]
+	},
+
+	// Gegenstaende fallen auf Gegner
+	{	"situation": "any",
+		"direction": "south",
+		"original": [{"token":"*","flags":{"falling":"true"}}, {"token":["swapling","xling"]}],
+		"result": [{"token":"path", "flags":{"moved":"true"}}, {"token":"0", "flags":{"bamrich":"true"}}]
+	},
+	{	"situation": "any",
+		"direction": "south",
+		"original": [{"token":"*","flags":{"falling":"true"}}, {"token":"blockling"}],
+		"result": [{"token":"path", "flags":{"moved":"true"}}, {"token":"0", "flags":{"bam":"true"}}]
+	},
+	// Bamrich: Umwandlung der herumliegenden Feldern in Gems
+	{	"situation": "any",
+		"direction": "north",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "northeast",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "southeast",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "south",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "southwest",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "west",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "northwest",
+		"original": [{"token":"*","flags":{"bamrich":"true"}}, {"token":["path","mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "ballon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"gem"}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":["stone","gem"],"flags":{"bamrich":"true"}}],
+		"result": [{"token":"gem"}]
+	},
+
+
+	// Explosion
+	{	"situation": "any",
+		"direction": "north",
+		"original": [{"token":"*","flags":{"bam":"true"}}, {"token":["path", "me","me2", "me3", "me4", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"explosion"}]
+	},
+	{	"situation": "any",
+		"direction": "northeast",
+		"original": [{"token":"*","flags":{"bam":"true"}}, {"token":["path", "me","me2", "me3", "me4", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"explosion"}]
+	},
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":"*","flags":{"bam":"true"}}, {"token":["path", "me","me2", "me3", "me4", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"explosion"}]
+	},
+	{	"situation": "any",
+		"direction": "southeast",
+		"original": [{"token":"*","flags":{"bam":"true"}}, {"token":["path", "me","me2", "me3", "me4", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"explosion"}]
+	},
+	{	"situation": "any",
+		"direction": "south",
+		"original": [{"token":"*","flags":{"bam":"true"}}, {"token":["path", "me","me2", "me3", "me4", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"explosion"}]
+	},
+	{	"situation": "any",
+		"direction": "southwest",
+		"original": [{"token":"*","flags":{"bam":"true"}}, {"token":["path", "me","me2", "me3", "me4", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"explosion"}]
+	},
+	{	"situation": "any",
+		"direction": "west",
+		"original": [{"token":"*","flags":{"bam":"true"}}, {"token":["path", "me","me2", "me3", "me4", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"0"}, {"token":"explosion"}]
+	},
+	{	"situation": "any",
+		"direction": "northwest",
+		"original": [{"token":"*","flags":{"bam":"true"}}, {"token":["path", "me","me2", "me3", "me4", "mud", "stone", "bricks", "path", "explosion", "swapling", "blockling", "xling", "ghostling", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"]}],
+		"result": [{"token":"explosion"}, {"token":"explosion"}]
+	},
+	// Aufloesung der Explosion
+	{	"situation": "any",
+		"direction": "east",
+		"original": [{"token":"explosion"}],
+		"result": [{"token":"path"}]
+	},
+
+
+  // Sieve
+	{	"situation": "any",
+		"direction": "south",
+		"original": [{"token":"stone","flags":{"falling":"true"}}, {"token":"sieve"}, {"token":"path"}],
+		"result": [{"token":"path","flags":{"moved":"true"}}, {"token":"sieve"},{"token":"gem", "flags":{"moved":"true"}}]
+	},
+
+  // Exit
+  	// Player 1
+    {	"situation": "up",
+      "direction": "north",
+      "original": [{"token":"me", "flags":{"moved":"false"}}, {"token":"exit"}],
+      "result": [{"token": "me", "flags":{"moved":"true"}}, {"token":"exit", "flags":{"exit":"true"}}]
+    },
+    {	"situation": "right",
+      "direction": "east",
+      "original": [{"token":"me","flags":{"moved":"false"}}, {"token":"exit"}],
+      "result": [{"token": "me", "flags":{"moved":"true"}}, {"token":"exit", "flags":{"exit":"true"}}]
+    },
+    {	"situation": "down",
+      "direction": "south",
+      "original": [{"token":"me","flags":{"moved":"false"}}, {"token":"exit"}],
+      "result": [{"token": "me"}, {"token":"exit", "flags":{"exit":"true"}}]
+    },
+    {	"situation": "left",
+      "direction": "west",
+      "original": [{"token":"me","flags":{"moved":"false"}}, {"token":"exit"}],
+      "result": [{"token": "me", "flags":{"moved":"true"}}, {"token":"exit", "flags":{"exit":"true"}}]
+    },
+	// Player 2
+	{	"situation": "up2",
+	  "direction": "north",
+	  "original": [{"token":"me2" ,"flags":{"moved":"false"}}, {"token":"exit"}],
+	  "result": [{"token": "me2", "flags":{"moved":"true"}}, {"token":"exit", "flags":{"exit":"true"}}]
+	},
+	{	"situation": "right2",
+	  "direction": "east",
+	  "original": [{"token":"me2","flags":{"moved":"false"}}, {"token":"exit"}],
+	  "result": [{"token": "me2", "flags":{"moved":"true"}}, {"token":"exit", "flags":{"exit":"true"}}]
+	},
+	{	"situation": "down2",
+	  "direction": "south",
+	  "original": [{"token":"me2","flags":{"moved":"false"}}, {"token":"exit"}],
+	  "result": [{"token": "me2"}, {"token":"exit", "flags":{"exit":"true"}}]
+	},
+	{	"situation": "left2",
+	  "direction": "west",
+	  "original": [{"token":"me2","flags":{"moved":"false"}}, {"token":"exit"}],
+	  "result": [{"token": "me2", "flags":{"moved":"true"}}, {"token":"exit", "flags":{"exit":"true"}}]
+	},
+	// Player 3
+	{	"situation": "up3",
+	  "direction": "north",
+	  "original": [{"token":"me3", "flags":{"moved":"false"}}, {"token":"exit"}],
+	  "result": [{"token": "me3", "flags":{"moved":"true"}}, {"token":"exit", "flags":{"exit":"true"}}]
+	},
+	{	"situation": "right3",
+	  "direction": "east",
+	  "original": [{"token":"me3","flags":{"moved":"false"}}, {"token":"exit"}],
+	  "result": [{"token": "me3", "flags":{"moved":"true"}}, {"token":"exit", "flags":{"exit":"true"}}]
+	},
+	{	"situation": "down3",
+	  "direction": "south",
+	  "original": [{"token":"me3","flags":{"moved":"false"}}, {"token":"exit"}],
+	  "result": [{"token": "me3"}, {"token":"exit", "flags":{"exit":"true"}}]
+	},
+	{	"situation": "left3",
+	  "direction": "west",
+	  "original": [{"token":"me3","flags":{"moved":"false"}}, {"token":"exit"}],
+	  "result": [{"token": "me3", "flags":{"moved":"true"}}, {"token":"exit", "flags":{"exit":"true"}}]
+	},
+	// Player 4
+	{	"situation": "up4",
+	  "direction": "north",
+	  "original": [{"token":"me4", "flags":{"moved":"false"}}, {"token":"exit"}],
+	  "result": [{"token": "me4", "flags":{"moved":"true"}}, {"token":"exit", "flags":{"exit":"true"}}]
+	},
+	{	"situation": "right4",
+	  "direction": "east",
+	  "original": [{"token":"me4","flags":{"moved":"false"}}, {"token":"exit"}],
+	  "result": [{"token": "me4", "flags":{"moved":"true"}}, {"token":"exit", "flags":{"exit":"true"}}]
+	},
+	{	"situation": "down4",
+	  "direction": "south",
+	  "original": [{"token":"me4","flags":{"moved":"false"}}, {"token":"exit"}],
+	  "result": [{"token": "me4"}, {"token":"exit", "flags":{"exit":"true"}}]
+	},
+	{	"situation": "left4",
+	  "direction": "west",
+	  "original": [{"token":"me4","flags":{"moved":"false"}}, {"token":"exit"}],
+	  "result": [{"token": "me4", "flags":{"moved":"true"}}, {"token":"exit", "flags":{"exit":"true"}}]
+	},
+
+	// Player eingesperrt
+  		// Player 1
+	{ "situation":"any",
+		"direction":"north",
+		"original":[{"token":["stone", "wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}, {"token": "me", "flags": {"moved": "false"}}, {"token":["stone", "wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}],
+		"result": [{"token":"0"},{"token": "me", "flags": {"lockedv": "true"}}, {"token":"2"}]
+	},
+
+	{"situation": "any",
+		"direction":"east",
+		"original":[{"token":["stone","wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}, {"token": "me", "flags": {"lockedv": "true"}}, {"token":["stone","wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}],
+		"result": [{"token":"0"}, {"token": "me", "flags":{"gameover":"true"}}, {"token": "2"}]
+	},
+	// Player 2
+	{ "situation":"any",
+	  "direction":"north",
+	  "original":[{"token":["stone", "wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}, {"token": "me2", "flags": {"moved": "false"}}, {"token":["stone", "wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}],
+	  "result": [{"token":"0"},{"token": "me2", "flags": {"lockedv": "true"}}, {"token":"2"}]
+	},
+
+	{"situation": "any",
+	  "direction":"east",
+	  "original":[{"token":["stone","wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}, {"token": "me2", "flags": {"lockedv": "true"}}, {"token":["stone","wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}],
+	  "result": [{"token":"0"}, {"token": "me2", "flags":{"gameover":"true"}}, {"token": "2"}]
+	},
+	// Player 3
+	{ "situation":"any",
+	  "direction":"north",
+	  "original":[{"token":["stone", "wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}, {"token": "me3", "flags": {"moved": "false"}}, {"token":["stone", "wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}],
+	  "result": [{"token":"0"},{"token": "me3", "flags": {"lockedv": "true"}}, {"token":"2"}]
+	},
+
+	{"situation": "any",
+	  "direction":"east",
+	  "original":[{"token":["stone","wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}, {"token": "me3", "flags": {"lockedv": "true"}}, {"token":["stone","wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}],
+	  "result": [{"token":"0"}, {"token": "me3", "flags":{"gameover":"true"}}, {"token": "2"}]
+	},
+	// Player 4
+	{ "situation":"any",
+	  "direction":"north",
+	  "original":[{"token":["stone", "wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}, {"token": "me4", "flags": {"moved": "false"}}, {"token":["stone", "wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}],
+	  "result": [{"token":"0"},{"token": "me4", "flags": {"lockedv": "true"}}, {"token":"2"}]
+	},
+	{"situation": "any",
+	  "direction":"east",
+	  "original":[{"token":["stone","wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}, {"token": "me4", "flags": {"lockedv": "true"}}, {"token":["stone","wall", "bricks", "fire", "ice", "water", "machine", "norththing", "eastthing", "souththing", "westthing", "balloon", "slime"], "flags":{"moved":"false"}}],
+	  "result": [{"token":"0"}, {"token": "me4", "flags":{"gameover":"true"}}, {"token": "2"}]
+	},
+
+	// Extrazeit
+		// Player  1
+	{	"situation": "up",
+		"direction": "north",
+		"original": [{"token":"me", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me", "flags":{"moved":"true","timerich":"true"}}]
+	},
+	{	"situation": "right",
+		"direction": "east",
+		"original": [{"token":"me", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me","flags":{"moved":"true","timerich":"true"}}]
+	},
+	{	"situation": "down",
+		"direction": "south",
+		"original": [{"token":"me", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me","flags":{"moved":"true","timerich":"true"}}]
+	},
+	{	"situation": "left",
+		"direction": "west",
+		"original": [{"token":"me", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me","flags":{"moved":"true","timerich":"true"}}]
+	},
+
+		// Player 2
+	{	"situation": "up2",
+		"direction": "north",
+		"original": [{"token":"me2", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me2", "flags":{"moved":"true","timerich":"true"}}]
+	},
+	{	"situation": "right2",
+		"direction": "east",
+		"original": [{"token":"me2", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me2","flags":{"moved":"true","timerich":"true"}}]
+	},
+	{	"situation": "down2",
+		"direction": "south",
+		"original": [{"token":"me2", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me2","flags":{"moved":"true","timerich":"true"}}]
+	},
+	{	"situation": "left2",
+		"direction": "west",
+		"original": [{"token":"me2", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me2","flags":{"moved":"true","timerich":"true"}}]
+	},
+
+	// Player 3
+	{	"situation": "up3",
+		"direction": "north",
+		"original": [{"token":"me3", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me3", "flags":{"moved":"true","timerich":"true"}}]
+	},
+	{	"situation": "right3",
+		"direction": "east",
+		"original": [{"token":"me3", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me3","flags":{"moved":"true","timerich":"true"}}]
+	},
+	{	"situation": "down3",
+		"direction": "south",
+		"original": [{"token":"me3", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me3","flags":{"moved":"true","timerich":"true"}}]
+	},
+	{	"situation": "left3",
+		"direction": "west",
+		"original": [{"token":"me3", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me3","flags":{"moved":"true","timerich":"true"}}]
+	},
+
+	// Player 4
+	{	"situation": "up4",
+		"direction": "north",
+		"original": [{"token":"me4", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me4", "flags":{"moved":"true","timerich":"true"}}]
+	},
+	{	"situation": "right4",
+		"direction": "east",
+		"original": [{"token":"me4", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me4","flags":{"moved":"true","timerich":"true"}}]
+	},
+	{	"situation": "down4",
+		"direction": "south",
+		"original": [{"token":"me4", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me4","flags":{"moved":"true","timerich":"true"}}]
+	},
+	{	"situation": "left4",
+		"direction": "west",
+		"original": [{"token":"me4", "flags":{"moved":"false"}},{"token":"extratime"}],
+		"result": [{"token":"path","flags":{"moved":"true"}},{"token":"me4","flags":{"moved":"true","timerich":"true"}}]
+	}
+]

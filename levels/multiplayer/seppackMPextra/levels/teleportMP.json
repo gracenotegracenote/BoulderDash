@@ -1,0 +1,37 @@
+{
+  "gems":[1,3,4,5,6],
+  "height":15,
+  "name":"Teleport",
+  "time":[380,220,199,170,110],
+  "width":25,
+  "ticksPerSecond": 7,
+  "prerules":[
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"path"},{"token":"norththing"},{"token":"*"},{"token":"*"},{"token":"*"},{"token":"*"},{"token":"souththing"},{"token":["gem", "stone", "me"]}],
+      "result":[{"token":"7", "flags":{"moved":"true"}},{"token":"1"},{"token":"2"},{"token":"3"},{"token":"4"},{"token":"5"},{"token":"6"},{"token":"path", "flags":{"moved":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"path", "flags":{"moved":"false"}},{"token":"norththing"},{"token":"*"},{"token":"*"},{"token":"*"},{"token":"*"},{"token":"*"},{"token":"*"},{"token":"souththing"},{"token":["gem", "stone", "me"], "flags":{"moved":"false"}}],
+      "result":[{"token":"9", "flags":{"moved":"true"}},{"token":"1"},{"token":"2"},{"token":"3"},{"token":"4"},{"token":"5"},{"token":"6"},{"token":"7"},{"token":"8"},{"token":"path", "flags":{"moved":"true"}}]
+    }
+    ],
+  "map":[
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "stone", "mud", "mud", "mud", "mud", "mud", "mud", "norththing", "norththing", "mud", "mud", "mud", "mud", "mud", "sieve", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "norththing", "norththing", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "stone", "mud", "mud", "mud", "mud", "mud", "me", "exit", "mud", "norththing", "norththing", "mud", "mud", "mud", "mud", "mud", "mud", "stone", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "me4", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "stone", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "me3", "mud", "mud", "mud", "mud", "souththing", "souththing", "souththing", "souththing", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "me2", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "souththing", "souththing", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "stone", "mud", "wall"],
+    ["wall", "mud", "mud", "stone", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "stone", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "stone", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "mud", "wall"],
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"]
+    ]
+}

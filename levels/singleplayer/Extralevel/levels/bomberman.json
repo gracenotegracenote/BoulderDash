@@ -1,0 +1,413 @@
+{
+  "gems":[0,1,2,3,4],
+  "height":25,
+  "name":"Bomberman",
+  "time":[1240,650,459,155,55],
+  "width":25,
+  "ticksPerSecond": 6,
+
+  "prerules":[
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":["souththing", "eastthing", "norththing", "westthing"], "flags":{"A":"false", "B":"true"}}],
+      "result":[{"token":"0", "flags":{"A":"true", "B":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":["souththing", "eastthing", "norththing", "westthing"], "flags":{"A":"true", "B":"false"}}],
+      "result":[{"token":"0", "flags":{"A":"false", "B":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":["souththing", "eastthing", "norththing", "westthing"], "flags":{"A":"false", "B":"false"}}],
+      "result":[{"token":"0", "flags":{"A":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"souththing", "flags":{"A":"true", "B":"true"}}],
+      "result":[{"token":"westthing", "flags":{"A":"false", "B":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"eastthing", "flags":{"A":"true", "B":"true"}}],
+      "result":[{"token":"souththing", "flags":{"A":"false", "B":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"norththing", "flags":{"A":"true", "B":"true"}}],
+      "result":[{"token":"eastthing", "flags":{"A":"false", "B":"false"}}]
+    },
+    { "situation":"metaright",
+      "direction":"east",
+      "original":[{"token":"me"},{"token":"path"}],
+      "result":[{"token":"0"},{"token":"norththing", "flags":{"A":"false", "B":"false"}}]
+    },
+    { "situation":"metaup",
+      "direction":"north",
+      "original":[{"token":"me"},{"token":"path"}],
+      "result":[{"token":"0"},{"token":"norththing", "flags":{"A":"false", "B":"false"}}]
+    },
+    { "situation":"metaleft",
+      "direction":"west",
+      "original":[{"token":"me"},{"token":"path"}],
+      "result":[{"token":"0"},{"token":"norththing", "flags":{"A":"false", "B":"false"}}]
+    },
+    { "situation":"metadown",
+      "direction":"south",
+      "original":[{"token":"me"},{"token":"path"}],
+      "result":[{"token":"0"},{"token":"norththing", "flags":{"A":"false", "B":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"me"},{"token":"ghostling"}],
+      "result":[{"token":"0"},{"token":"1", "flags":{"bam":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"me"},{"token":"ghostling"}],
+      "result":[{"token":"0"},{"token":"1", "flags":{"bam":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"me"},{"token":"ghostling"}],
+      "result":[{"token":"0"},{"token":"1", "flags":{"bam":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"me"},{"token":"ghostling"}],
+      "result":[{"token":"0"},{"token":"1", "flags":{"bam":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"northeast",
+      "original":[{"token":"me"},{"token":"ghostling"}],
+      "result":[{"token":"0"},{"token":"1", "flags":{"bam":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"southeast",
+      "original":[{"token":"me"},{"token":"ghostling"}],
+      "result":[{"token":"0"},{"token":"1", "flags":{"bam":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"southwest",
+      "original":[{"token":"me"},{"token":"ghostling"}],
+      "result":[{"token":"0"},{"token":"1", "flags":{"bam":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"northwest",
+      "original":[{"token":"me"},{"token":"ghostling"}],
+      "result":[{"token":"0"},{"token":"1", "flags":{"bam":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "right":"true"}},{"token":"path"}],
+      "result":[{"token":"1", "flags":{"moved":"true", "right":"false"}},{"token":"ghostling", "flags":{"moved":"true", "right":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "left":"true"}},{"token":"path"}],
+      "result":[{"token":"1", "flags":{"moved":"true", "left":"false"}},{"token":"ghostling", "flags":{"moved":"true", "left":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "up":"true"}},{"token":"path"}],
+      "result":[{"token":"1", "flags":{"moved":"true", "up":"false"}},{"token":"ghostling", "flags":{"moved":"true", "up":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "down":"true"}},{"token":"path"}],
+      "result":[{"token":"1", "flags":{"moved":"true", "down":"false"}},{"token":"ghostling", "flags":{"moved":"true", "down":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "left":"true"}}],
+      "result":[{"token":"0", "flags":{"moved":"true", "right":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "right":"true"}}],
+      "result":[{"token":"0", "flags":{"moved":"true", "left":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "up":"true"}}],
+      "result":[{"token":"0", "flags":{"moved":"true", "down":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"ghostling", "flags":{"moved":"false", "down":"true"}}],
+      "result":[{"token":"0", "flags":{"moved":"true", "up":"true"}}]
+    },
+    { "situation":"any",
+      "probability":"0.2",
+      "direction":"east",
+      "original":[{"token":"ghostling", "flags":{"up":"true"}},{"token":"path"}],
+      "result":[{"token":"0", "flags":{"right":"true"}},{"token":"path"}]
+    },
+    { "situation":"any",
+      "probability":"0.2",
+      "direction":"south",
+      "original":[{"token":"ghostling", "flags":{"right":"true"}},{"token":"path"}],
+      "result":[{"token":"0", "flags":{"down":"true"}},{"token":"path"}]
+    },
+    { "situation":"any",
+      "probability":"0.2",
+      "direction":"west",
+      "original":[{"token":"ghostling", "flags":{"down":"true"}},{"token":"path"}],
+      "result":[{"token":"0", "flags":{"left":"true"}},{"token":"path"}]
+    },
+    { "situation":"any",
+      "probability":"0.2",
+      "direction":"north",
+      "original":[{"token":"ghostling", "flags":{"left":"true"}},{"token":"path"}],
+      "result":[{"token":"0", "flags":{"up":"true"}},{"token":"path"}]
+    },
+    { "situation":"any",
+      "probability":"0.2",
+      "direction":"east",
+      "original":[{"token":"ghostling", "flags":{"down":"true"}},{"token":"path"}],
+      "result":[{"token":"0", "flags":{"right":"true"}},{"token":"path"}]
+    },
+    { "situation":"any",
+      "probability":"0.2",
+      "direction":"south",
+      "original":[{"token":"ghostling", "flags":{"left":"true"}},{"token":"path"}],
+      "result":[{"token":"0", "flags":{"down":"true"}},{"token":"path"}]
+    },
+    { "situation":"any",
+      "probability":"0.2",
+      "direction":"west",
+      "original":[{"token":"ghostling", "flags":{"up":"true"}},{"token":"path"}],
+      "result":[{"token":"0", "flags":{"left":"true"}},{"token":"path"}]
+    },
+    { "situation":"any",
+      "probability":"0.2",
+      "direction":"north",
+      "original":[{"token":"ghostling", "flags":{"right":"true"}},{"token":"path"}],
+      "result":[{"token":"0", "flags":{"up":"true"}},{"token":"path"}]
+    }
+    ],
+  "postrules":[
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"*", "flags":{"F":"true"}}],
+      "result":[{"token":"explosion", "flags":{"D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"*", "flags":{"D":"true", "E":"false"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":"bricks"}],
+      "result":[{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "E":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"north",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"west",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"south",
+      "original":[{"token":"*", "flags":{"F":"true"}},{"token":["path", "me", "ghostling", "gem"]}],
+      "result":[{"token":"explosion"},{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"westthing", "flags":{"A":"true", "B":"true"}}],
+      "result":[{"token":"explosion", "flags":{"A":"true", "B":"true", "C":"true", "D":"true", "F":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"path"}],
+      "result":[{"token":"0", "flags":{"A":"false", "B":"false", "C":"false", "D":"false", "E":"false", "F":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"A":"false", "B":"false", "C":"false", "F":"true"}}],
+      "result":[{"token":"0", "flags":{"F":"false"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"A":"false", "B":"false", "C":"true", "F":"true"}}],
+      "result":[{"token":"0", "flags":{"C":"false", "F":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"A":"false", "B":"true", "F":"true"}}],
+      "result":[{"token":"0", "flags":{"B":"false", "F":"true"}}]
+    },
+    { "situation":"any",
+      "direction":"east",
+      "original":[{"token":"*", "flags":{"A":"true", "F":"true"}}],
+      "result":[{"token":"0", "flags":{"A":"false", "F":"true"}}]
+    }
+    ],
+  "map":[
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+    ["wall", "me", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "bricks", "wall", "bricks", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "bricks", "bricks", "bricks", "bricks", "bricks", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "bricks", "wall", "bricks", "wall", "path", "wall", "path", "wall", {"token":"ghostling", "flags":{"up":"true"}}, "wall", "path", "wall", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "bricks", "bricks", "gem", "bricks", "bricks", "bricks", "bricks", "bricks", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "bricks", "wall", "bricks", "wall", "bricks", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "bricks", "bricks", "bricks", "gem", "gem", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "wall"],
+    ["wall", "path", "wall", "path", "wall", "path", "wall", "bricks", "wall", "bricks", "wall", "bricks", "wall", "gem", "wall", "bricks", "exit", "bricks", "wall", "bricks", "wall", "gem", "wall", "gem", "wall"],
+    ["wall", "path", "path", {"token":"ghostling", "flags":{"left":"true"}}, "path", "path", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "wall", "path", "wall", "path", "wall", "bricks", "wall", "path", "wall", "path", "wall", "bricks", "wall", "bricks", "wall", "bricks", "wall", "bricks", "wall", "path", "wall", {"token":"ghostling", "flags":{"up":"true"}}, "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "bricks", "bricks", "bricks", "bricks", "gem", "bricks", "bricks", "bricks", "bricks", "path", "path", "wall"],
+    ["wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "bricks", "wall", "bricks", "wall", "bricks", "wall", "bricks", "wall", "bricks", "wall", "bricks", "wall", "bricks", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "bricks", "bricks", "bricks", "bricks", "bricks", "path", "path", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "bricks", "wall"],
+    ["wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "bricks", "wall", "bricks", "wall", "path", "wall", "path", "wall", "path", "wall", "bricks", "wall", "bricks", "wall", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "bricks", "bricks", "gem", "bricks", "bricks", "path", "path", "path", "path", "path", "path", "bricks", "bricks", "path", "path", "path", "wall"],
+    ["wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "bricks", "wall", "bricks", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall"],
+    ["wall", "path", "path", {"token":"ghostling", "flags":{"right":"true"}}, "path", "path", "path", "path", "path", "bricks", "bricks", "bricks", "path", "path", "path", "path", "path", {"token":"ghostling", "flags":{"up":"true"}}, "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", {"token":"ghostling", "flags":{"right":"true"}}, "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "path", "wall", "path", "wall", "path", "wall", {"token":"ghostling", "flags":{"down":"true"}}, "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall", "path", "wall"],
+    ["wall", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "path", "wall"],
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"]
+    ]
+}

@@ -1,0 +1,21 @@
+{
+  "gems" :[5,8,11,15,17],
+  "height":10,
+  "name":"Der Einstieg",
+  "time":[120,90,50,25,15],
+  "width":15,
+  "ticksPerSecond": 9,
+
+  "map":[
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+    ["wall", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "gem", "wall"],
+    ["wall", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "stone", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "bricks", "bricks", "bricks", "mud", "mud", "mud", "mud", "mud", "mud", "mud"],
+    ["wall", "mud", "mud", "mud", "mud", "bricks", "exit", "bricks", "mud", "mud", "mud", "mud", "mud", "mud", "mud"],
+    ["wall", "mud", "me", "mud", "mud", "bricks", "gem", "bricks", "mud", "mud", "path", "path", "path", "path", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "gem", "mud", "mud", "mud", "path", "me2", "path", "path", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "gem", "mud", "mud", "mud", "path", "me3", "path", "path", "wall"],
+    ["wall", "mud", "mud", "mud", "mud", "mud", "gem", "mud", "mud", "mud", "path", "me4", "path", "path", "wall"],
+    ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"]
+    ]
+}

@@ -1,0 +1,11 @@
+{
+"name":"Multiplayer Levels, SEP 2016/17",
+"levels":[
+  {"path":"einstiegMP","design":"images/boazn/","needpoints":0},
+  {"path":"wandMP","design":"images/konzert/","needpoints":2},
+  {"path":"textMP","design":"images/festival/","needpoints":4},
+  {"path":"spiegelgeistMP","design":"images/jamaica/","needpoints":6},
+  {"path":"kreisverkehrMP","design":"images/p1/","needpoints":8},
+  {"path":"feuersteinMP","design":"images/metal/","needpoints":10}
+  ]
+}

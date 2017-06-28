@@ -1,0 +1,9 @@
+{
+"name":"Extra Level Pack Boulder Dash, SEP 2016/17",
+"levels":[
+  {"path":"teleportMP","design":"images/default/","needpoints":0},
+  {"path":"gameoflifeMP","design":"images/default/","needpoints":2},
+  {"path":"wasserfallMP","design":"images/default/","needpoints":4},
+  {"path":"bombermanMP","design":"images/default/","needpoints":6}
+  ]
+}

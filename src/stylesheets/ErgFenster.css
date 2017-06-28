@@ -1,0 +1,24 @@
+.ergebnisFenster {
+-fx-background-color: black;
+-fx-padding: 10px;
+-fx-spacing: 10px;
+}
+
+.ergFensterButton {
+-fx-background-color: white;
+-fx-font-family: "Courier New";
+-fx-font-size: 10px;
+}
+
+.space {
+-fx-margin-bottom:10px;
+}
+
+.ergFensterButton:hover {
+-fx-background-color: gainsboro;
+}
+
+.ergFensterLabel {
+-fx-text-fill: white;
+-fx-font-family: "Courier New";
+}
